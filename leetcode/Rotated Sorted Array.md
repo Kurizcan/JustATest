@@ -1,0 +1,68 @@
+#  33. Search in Rotated Sorted Array
+
+[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+## 分析
+
+O(N) 解法：双指针
+
+```go
+func search(nums []int, target int) int {
+  if len(nums) == 0 {
+    return -1
+  }
+  i, j := 0, len(nums) - 1
+  for i <= j {
+    if target > nums[i] {
+      i++
+    } else if target < nums[j] {
+      j--
+    } else if target == nums[i] {
+      return i
+    } else if target == nums[j] {
+      return j
+    } else {
+      i++
+      j--
+    }
+  }
+  return -1
+}
+```
+
+O(logN) 解法：利用旋转数组的特点，使用二分查找
+
+```go
+func search(nums []int, target int) int {
+  if len(nums) == 0 {
+    return -1
+  }
+  l, r := 0, len(nums) - 1
+  var mid int 
+  for l <= r {
+    mid = l + (r - l) >> 1
+    if nums[mid] == target {
+      return mid
+    }
+    // 左边是有序的，注意这里是小于等于，l 有可能和
+    if nums[l] <= nums[mid] {
+      if nums[l] <= target && target < nums[mid] {
+        // 在左边的范围寻找
+        r = mid - 1
+      } else {
+        l = mid + 1
+      }
+    } else {
+      // 右边是有序的
+      if nums[mid] < target && nums[r] >= target {
+        l = mid + 1
+      } else {
+        r = mid - 1
+      }
+    }
+  }
+  return -1
+}
+```
+
+> 考查的是二分查找

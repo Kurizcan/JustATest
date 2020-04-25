@@ -78,3 +78,7 @@ go 的结构体注意：
 var cur *ListNode    // cur = nil
 cur := &ListNode{}   // *cur = ListNode{} 不等于 nil，结构体中的字段取默认值 
 ```
+
+nil 只能赋值给指针、channel、func、interface、map 或 slice 类型的变量，将 nil 赋值给其他类型的变量会引发 panic。
+
+- [如何判断 struct 为空](http://xuyangyang.xyz/2017/11/13/golang-%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD-struct-null/)
