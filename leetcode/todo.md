@@ -15,3 +15,8 @@
 ## 动态规划
 
 - [53. 最大子序和（可以使用 dp 或者分冶法求解）](https://leetcode.com/problems/maximum-subarray/) 
+
+## 贪心算法
+
+- [55. Jump Game](https://leetcode.com/problems/jump-game/)
+- [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
