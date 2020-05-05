@@ -20,3 +20,11 @@
 
 - [55. Jump Game](https://leetcode.com/problems/jump-game/)
 - [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+
+## 位运算相关
+
+- [476. Number Complement](https://leetcode.com/problems/number-complement/)
+
+## 二叉树相关
+
+- [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
