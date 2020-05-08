@@ -17,6 +17,7 @@
 
 - [53. 最大子序和（可以使用 dp 或者分冶法求解）](https://leetcode.com/problems/maximum-subarray/) 
 - [983. Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
+- [221.Maximal Square](https://leetcode.com/problems/maximal-square/)
 
 ## 贪心算法
 
@@ -30,3 +31,4 @@
 ## 二叉树相关
 
 - [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+- [993. cousins-in-binary-tree](https://leetcode.com/problems/cousins-in-binary-tree/)
